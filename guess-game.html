@@ -6,9 +6,27 @@
     <script src="guess-game.js"></script>
 </head>
 <body>
-<div id="game-selection"></div>
-<div id="game1"></div>
-<div id="game2"></div>
+<div id="game-selection">
+    <button id="start_game1">Start Game 1</button>
+    <button id="start_game2">Start Game 2</button>
+</div>
+
+<div id="game1">
+    <form>
+        <input type="text" id="player_input" placeholder="number">
+    </form>
+    <button id="try_button">Try</button>
+    <div id="message1"></div>
+    <button id="restart_button">Restart</button>
+</div>
+
+<div id="game2">
+    <div id="message2"></div>
+    <button id="smaller_button">Smaller</button>
+    <button id="bigger_button">Bigger</button>
+    <button id="found_button">Found</button>
+    <button id="restart_button2">Restart</button>
+</div>
 
 </body>
 </html>
