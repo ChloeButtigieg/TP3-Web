@@ -35,9 +35,9 @@ function init() {
 
     new_game();
 
+    start_game1.addEventListener("click", start_player_guess_game);
     try_button.addEventListener("click", try_button_event);
     restart_button1.addEventListener("click", new_game);
-    start_game1.addEventListener("click", start_player_guess_game);
 
     start_game2.addEventListener("click", start_computer_guess_game);
     smaller_button.addEventListener("click", smaller_button_event);
@@ -57,6 +57,8 @@ function try_button_event() {
         message1.innerHTML = "Non, c'est plus petit";
     } else {
         message1.innerHTML = "Bravo, vous avez trouvé";
+        hide(player_input);
+        hide(try_button);
         show(restart_button1);
     }
     player_input.value = "";
